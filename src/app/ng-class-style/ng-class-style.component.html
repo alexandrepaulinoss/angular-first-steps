@@ -1,0 +1,9 @@
+<div [ngClass]="isRed ? 'red' : 'white'">
+  Test ngClass
+</div>
+
+<div [ngStyle]="{ 'background-color': isRed ? 'red' : 'white' }">
+  Test ngStyle
+</div>
+
+<button [ngClass]="isRed ? 'white' : 'red'" (click)="changeColor()">Paint div background {{color}}</button>
